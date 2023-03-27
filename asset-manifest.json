@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Website-Gunaybank/static/css/main.533647eb.css",
+    "main.js": "/Website-Gunaybank/static/js/main.7eab8146.js",
+    "static/js/787.58f48ea0.chunk.js": "/Website-Gunaybank/static/js/787.58f48ea0.chunk.js",
+    "static/media/Roboto400.ttf": "/Website-Gunaybank/static/media/Roboto400.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto700.ttf": "/Website-Gunaybank/static/media/Roboto700.f80816a5455d171f948d.ttf",
+    "static/media/Electrolize400.ttf": "/Website-Gunaybank/static/media/Electrolize400.b27462fc6532a900b8d3.ttf",
+    "static/media/phone.png": "/Website-Gunaybank/static/media/phone.1e95e7c8f4fe1dac6027.png",
+    "static/media/logo.png": "/Website-Gunaybank/static/media/logo.286004c7a218d466c625.png",
+    "static/media/gunaysigorta.png": "/Website-Gunaybank/static/media/gunaysigorta.33314c380c5005533ea1.png",
+    "static/media/msp.png": "/Website-Gunaybank/static/media/msp.19309950d05371da8637.png",
+    "index.html": "/Website-Gunaybank/index.html",
+    "main.533647eb.css.map": "/Website-Gunaybank/static/css/main.533647eb.css.map",
+    "main.7eab8146.js.map": "/Website-Gunaybank/static/js/main.7eab8146.js.map",
+    "787.58f48ea0.chunk.js.map": "/Website-Gunaybank/static/js/787.58f48ea0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.533647eb.css",
+    "static/js/main.7eab8146.js"
+  ]
+}
