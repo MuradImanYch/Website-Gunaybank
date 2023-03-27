@@ -1,0 +1,33 @@
+#correspondentBanks .table {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    overflow: auto;
+}
+#correspondentBanks .table div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+#correspondentBanks .table div span {
+    padding: 10px;
+    border: 1px solid silver;
+    font-size: 0.9em;
+}
+#correspondentBanks .table div span:first-child {
+    background: #003e85;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#correspondentBanks > div > div > div:nth-child(1) {
+    min-width: 300px;
+}
+#correspondentBanks .wrap > span {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto700;
+}
+#correspondentBanks .wrap > span:last-child {
+    margin: 40px 0 0 0;
+}

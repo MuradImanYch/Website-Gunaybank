@@ -1,0 +1,49 @@
+#currency .wrap {
+    width: 100%;
+    min-height: auto;
+    background: linear-gradient(to left, #ffc95d, #ffd582);
+    border: 2px dashed #003e85;
+    padding: 30px;
+}
+#currency .wrap .head span:nth-child(2) {
+    padding: 0 50px 0 0;
+}
+#currency .wrap .head {
+    font-size: 0.95em;
+}
+#currency .wrap .head span {
+    font-family: Roboto700 !important;
+}
+#currency .wrap div {
+    display: flex;
+    justify-content: space-between;
+}
+#currency .wrap div:not(#currency .wrap .head) {
+    margin: 20px 0;
+}
+#currency .wrap div span:first-child {
+    font-family: Roboto700;
+}
+#currency .wrap > span {
+    font-size: 0.9em;
+    margin: 20px 0 0 0 !important;
+}
+#currency .wrap a {
+    display: flex;
+    justify-content: flex-end;
+    color: #003e85;
+    font-family: Roboto700;
+    text-decoration: underline;
+}
+#currency .wrap a:hover {
+    color: #005eca;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    #currency .wrap {
+        width: 400px;
+        margin: 70px 0 0 0;
+    }
+}

@@ -1,0 +1,63 @@
+h2 {
+    text-align: center;
+    padding: 50px 0 70px 0;
+    font-size: 2.5em;
+    animation: title 0.8s ease-out;
+}
+.linkWrap {
+    display: flex;
+    flex-direction: column;
+}
+.linkWrap a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #003e85;
+    transform: skew(-40deg);
+    width: 200px;
+    margin: 10px auto;
+    animation: link 0.5s ease-out;
+}
+.linkWrap a div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Roboto700;
+    transform: skew(40deg);
+    padding: 10px 0;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+.linkWrap a:hover {
+    background: #e2aa3a;
+    transition: 0.3s;
+}
+
+@keyframes link {
+	from {
+		transform: skew(-30deg);
+	}
+	to {
+		transform: skew(-40deg);
+	}
+}
+
+@media (min-width: 412px) {
+    .linkWrap a div {
+        padding: 15px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .linkWrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .linkWrap a {
+        margin: 20px;
+        height: 100px;
+        width: 250px;
+    }
+}

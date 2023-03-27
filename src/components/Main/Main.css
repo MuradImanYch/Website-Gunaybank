@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+    #currencyNewsSlider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1680px) {
+    #currencyNewsSlider {
+        justify-content: center;
+    }
+}

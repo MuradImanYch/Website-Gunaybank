@@ -1,0 +1,151 @@
+#bankOnline h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+}
+#bankOnline h2 button {
+    margin: 0 10px 0 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 0.8em;
+    background: linear-gradient(to right, #ffaa00, #ffc95d);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Roboto700;
+    color: #332b29;
+    display: flex;
+    align-items: center;
+}
+#bankOnline h2 button img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+#bankOnline h2 span {
+    margin: 0 0 0 10px;
+}
+#bankOnline h2 button:hover {
+    background: linear-gradient(to right, #ffc95d, #ffaa00);
+    color: #000;
+}
+#bankOnline p span {
+    font-family: Roboto700;
+}
+#bankOnline p {
+    margin: 30px 0 0 0;
+}
+#bankOnline > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bankOnline .text {
+    width: 95%;
+    border: 2px solid #ffaa00;
+    padding: 20px 35px 50px 35px;
+    border-radius: 20px;
+}
+#bankOnline .text, #bankOnline .numCard {
+    min-height: 400px;
+}
+#bankOnline .numCard {
+    background: #ffaa00;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #fff;
+    margin: 50px 0 0 0;
+}
+#bankOnline .numCard p {
+    padding: 0 8%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+#bankOnline .numCard img {
+    width: 200px;
+    margin: 30px 0 0 0;
+}
+#bankOnline > div:last-child {
+    margin: 50px 0 0 0;
+    flex-direction: column-reverse;
+}
+#bankOnline .nav {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bankOnline .faq {
+    width: 95%;
+    margin: 40px 0 0 0;
+}
+#bankOnline .faq p {
+    margin: 10px 0 0 0;
+}
+#bankOnline .faq .title {
+    width: 100%;
+    background: #ffaa00;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto700;
+    color: #fff;
+    cursor: pointer;
+}
+#bankOnline .faq .title span {
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+}
+#bankOnline .faq .answer {
+    display: none;
+    margin: 10px 0 25px 0;
+}
+#bankOnline .show {
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+@media (min-width: 1024px) {
+    #bankOnline h2 {
+        font-size: 2.5em;
+    }
+    #bankOnline h2 button {
+        margin: 0 20px 0 0;
+    }
+    #bankOnline h2 span {
+        margin: 0 0 0 20px;
+    }
+    #bankOnline > div {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #bankOnline .text {
+        width: 70%;
+    }
+    #bankOnline .numCard {
+        width: 25%;
+        margin: 0;
+    }
+    #bankOnline > div:last-child {
+        flex-direction: row-reverse;
+    }
+    #bankOnline .faq {
+        margin: 0px 0 0 0;
+        padding: 0 6%;
+        width: 70%;
+    }
+}

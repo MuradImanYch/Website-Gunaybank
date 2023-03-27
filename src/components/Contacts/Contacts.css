@@ -1,0 +1,143 @@
+#contacts .title {
+    font-family: Roboto700;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 60px 0 0 0;
+}
+#contacts .wrap h2:first-child {
+    padding: 0;
+}
+#contacts .table {
+    margin: 30px 0 0 0;
+}
+#contacts .table .col {
+    display: flex;
+}
+#contacts .table .col div {
+    background: #eee;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    width: 100%;
+}
+#contacts .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts .table .col:first-child div:first-child {
+    border-radius: 10px 0 0 0;
+}
+#contacts .table .col:first-child div:last-child {
+    border-radius: 0 10px 0 0;
+}
+#contacts .table .col:last-child div:first-child {
+    border-radius: 0 0 0 10px;
+}
+#contacts .table .col:last-child div:last-child {
+    border-radius: 0 0 10px 0;
+}
+#contacts form {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+#contacts form div {
+    margin: 10px 0;
+}
+#contacts form div > div {
+    display: flex;
+    flex-direction: column;
+}
+#contacts .userData {
+    display: flex;
+    flex-direction: column;
+}
+#contacts form select, #contacts form input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+#contacts .radioSelect {
+    display: flex;
+    flex-direction: row;
+}
+#contacts .radioSelect label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#contacts .radioSelect label:last-child input {
+    margin: 0 0 0 15px;
+}
+#contacts .radioSelect label span {
+    margin: 0 0 0 5px;
+    font-size: 0.9em;
+}
+#contacts .radioSelect input {
+    width: auto;
+}
+#contacts form textarea {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    height: 100px;
+}
+#contacts > div > form > div.userData > div:nth-child(7) {
+    width: 100%;
+    min-height: 100px;
+}
+#contacts form button[type="submit"] {
+    margin: 30px auto 0 auto;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ffbd3a;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+#contacts form button[type="submit"]:hover {
+    background: #ffaa00;
+    transition: 0.2s;
+}
+
+@media (min-width: 1024px) {
+    #contacts .table {
+        width: 800px;
+    }
+    #contacts .userData {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #contacts form select, #contacts form input {
+        width: 330px;
+    }
+    #contacts > div > form > div.userData > div:nth-child(6) {
+        width: 330px;
+        padding: 0 0 0 8px;
+    }
+}
+
+@media (min-width: 1680px) {
+    #contacts form select, #contacts form input {
+        width: 500px;
+    }
+    #contacts > div > form > div.userData > div:nth-child(6) {
+        width: 500px;
+    }
+}

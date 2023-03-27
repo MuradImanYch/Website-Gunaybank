@@ -1,0 +1,103 @@
+#headerSlider .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 0 0;
+    min-height: 600px;
+    justify-content: space-between;
+}
+#headerSlider .wrap div {
+    margin: 50px 0 20px 0;
+}
+#headerSlider .wrap img {
+    width: 100%;
+    animation: img 0.8s ease-out;
+}
+#headerSlider .wrap strong {
+    font-size: 1.5em;
+    font-family: Roboto700;
+    color: #332b29;
+    animation: title 0.8s ease-out;
+}
+#headerSlider .wrap p {
+    margin: 20px 0;
+    color: #332b29;
+    font-size: 1.1em;
+}
+#headerSlider .wrap button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.4em;
+    background: linear-gradient(to right, #ffaa00, #ffc95d);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 30px 30px 0 0;
+    font-family: Roboto700;
+    color: #332b29;
+}
+#headerSlider .wrap button:hover {
+    background: linear-gradient(to right, #ffc95d, #ffaa00);
+    color: #000;
+}
+
+@keyframes title {
+	from {
+		transform: translate(0, -10px);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes img {
+	from {
+		transform: rotateY(-20deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
+}
+
+@media (min-width: 1024px) {
+    #headerSlider .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        padding: 60px 0 0 0;
+        min-height: auto;
+    }
+    #headerSlider .wrap strong {
+        width: 100px;
+        display: block;
+        width: 400px;
+    }
+    #headerSlider .wrap p {
+        width: 400px;
+    }
+    #headerSlider .wrap img {
+        width: auto;
+    }
+}
+
+@media (min-width: 1680px) {
+    #headerSlider .wrap img {
+        width: 450px;
+    }
+    #headerSlider .wrap strong {
+        font-size: 2em;
+        width: 550px;
+    }
+    #headerSlider .wrap p {
+        margin: 20px 0;
+        color: #332b29;
+        font-size: 1.3em;
+        width: 550px;
+    }
+    #headerSlider .wrap button {
+        font-size: 1.6em;
+        padding: 15px 50px;
+    }
+}
