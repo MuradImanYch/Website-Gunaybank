@@ -1,0 +1,10 @@
+Xəbərlər, bütün xəbərlər, admin xəbərlər
+Valyuta məzənnələri, admin valyuta
+Kart sifarişi, admin kart sifarişi
+Xidmət şəbəkəsi - xəritə
+Admin - avtorizasiya
+
+------???
+map
+Цена банкоских карт
+

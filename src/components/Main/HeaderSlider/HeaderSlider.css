@@ -78,13 +78,13 @@
         width: 400px;
     }
     #headerSlider .wrap img {
-        width: auto;
+        width: 400px;
     }
 }
 
 @media (min-width: 1680px) {
     #headerSlider .wrap img {
-        width: 450px;
+        width: 500px;
     }
     #headerSlider .wrap strong {
         font-size: 2em;

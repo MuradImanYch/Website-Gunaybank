@@ -1,0 +1,89 @@
+#orderCard form div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+#orderCard form select, #orderCard form input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+#orderCard form .cardInfo, #orderCard form .personalInfo {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+#orderCard .personalInfo label[for="frontPass"], #orderCard .personalInfo label[for="backPass"] {
+    border: 2px solid #ffc95d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#orderCard .personalInfo input[type="file"] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+#orderCard .personalInfo label[for="frontPass"]:hover, #orderCard .personalInfo label[for="backPass"]:hover {
+    border: 2px solid #ebb345;
+    transition: 0.3s;
+    background: #eee;
+}
+#orderCard form button[type="submit"] {
+    margin: 30px auto 0 auto;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ffbd3a;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+#orderCard form button[type="submit"]:hover {
+    background: #ffaa00;
+    transition: 0.2s;
+}
+#orderCard .price {
+    color: gold;
+    font-size: 1.5em;
+}
+#orderCard .priceWrap {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (min-width: 1024px) {
+    #orderCard form select, #orderCard form input {
+        width: 500px;
+    }
+    #orderCard form .personalInfo select, #orderCard form .personalInfo input {
+        width: 330px;
+    }
+    #orderCard form .cardInfo, #orderCard form .personalInfo {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #orderCard .personalInfo label[for="frontPass"], #orderCard .personalInfo label[for="backPass"] {
+        margin: 10px 100px 0 100px;
+    }
+}
+
+@media (min-width: 1680px) {
+    #orderCard form .personalInfo select, #orderCard form .personalInfo input {
+        width: 500px;
+    }
+}

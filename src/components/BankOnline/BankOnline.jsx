@@ -1,10 +1,15 @@
 import React from 'react';
 import './BankOnline.css';
 import $ from 'jquery';
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+import 'swiper/css';
 
 import login from '../../assets/ico/login.png';
 import phone from '../../assets/ico/phone.png';
 import { Link } from 'react-router-dom';
+
+SwiperCore.use([Pagination, Navigation]);
 
 const BankOnline = () => {
     const faqToggle = (e) => {
@@ -25,7 +30,7 @@ const BankOnline = () => {
                 </div>
                 <div className='numCard'>
                     <p>Xidmətlə bağlı sualınız olarsa Bankın çağrı mərkəzi</p>
-                    <img src={phone} alt="phone" />
+                    <a href="tel:1546"><img src={phone} alt="phone" /></a>
                 </div>
             </div>
             <div>
@@ -66,12 +71,22 @@ const BankOnline = () => {
                     </div>
                 </div>
                 <div className="nav">
-                    <div className="linkWrap">
-                        <Link to=''><div>Strateji baxış və missiya bəyanatı. Strateji hədəflər</div></Link>
-                        <Link to=''><div>Inkişaf siyasəti</div></Link>
-                        <Link to=''><div>Rəhbərlik və struktur dəyişiklikləri</div></Link>
-                        <Link to=''><div>Tərəfdaşlar</div></Link>
-                    </div>
+                    <Swiper className='linkSlider' grabCursor={true} pagination={{type: "progressbar"}} navigation={true}>
+                        <SwiperSlide>
+                            <div className="linkWrap">
+                                <Link to=''><div>Kreditlər</div></Link>
+                                <Link to=''><div>Əmanətlər</div></Link>
+                                <Link to=''><div>Bank kartları</div></Link>
+                                <Link to=''><div>Pul köçürmələri</div></Link>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="linkWrap">
+                                <Link to=''><div>Əmanət seyfləri</div></Link>
+                                <Link to=''><div>Biznes kreditlər</div></Link>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </div>

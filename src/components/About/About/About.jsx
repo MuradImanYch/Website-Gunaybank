@@ -7,7 +7,7 @@ const About = () => {
         <div id='about'>
             <h2>Bank haqqında</h2>
             <div className="linkWrap">
-                <Link to='#'><div>Bankın tarixi</div></Link>
+                <Link to='/about/about-bank'><div>Bankın tarixi</div></Link>
                 <Link to=''><div>Rekvizitlər</div></Link>
                 <Link to=''><div>Rəhbərlik</div></Link>
                 <Link to=''><div>Hesabatlar</div></Link>

@@ -1,0 +1,42 @@
+#feedbackAdm .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#feedbackAdm .table {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    overflow: auto;
+}
+#feedbackAdm .table div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+#feedbackAdm .table div span {
+    padding: 10px;
+    border: 1px solid silver;
+    font-size: 0.9em;
+    height: 100px;
+    overflow: auto;
+}
+#feedbackAdm .table div span:first-child {
+    background: #003e85;
+    color: #fff;
+    border: 1px solid #fff;
+    min-width: 200px;
+    height: auto;
+}
+#feedbackAdm .wrap > span {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto700;
+}
+#feedbackAdm .wrap > span:last-child {
+    margin: 40px 0 0 0;
+}
+#feedbackAdm .wrap button img {
+    cursor: pointer;
+    width: 30px;
+}

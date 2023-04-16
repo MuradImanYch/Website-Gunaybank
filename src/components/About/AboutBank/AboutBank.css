@@ -1,0 +1,12 @@
+#about .wrap {
+    border: 2px solid #ffaa00;
+    padding: 50px 35px 50px 35px;
+    border-radius: 20px;
+}
+
+@media (min-width: 1024px) {
+    #about .wrap {
+        width: 90%;
+        margin: auto;
+    }
+}

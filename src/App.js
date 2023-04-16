@@ -19,6 +19,8 @@ import ServiceNetwork from './components/ServiceNetwork/Main';
 import Contacts from './components/Contacts/Contacts';
 import BankOnline from './components/BankOnline/BankOnline';
 import OrderCard from './components/OrderCard/OrderCard';
+import Admin from './components/Admin/Admin';
+import ExtendedMainNews from './components/Main/ExtendedMainNews/ExtendedMainNews';
 
 import Error from './components/Error/Error';
 
@@ -151,7 +153,9 @@ const App = () => {
           <Route path='service-network/*' element={<ServiceNetwork />} />
           <Route path='contacts/*' element={<Contacts />} />
           <Route path='internet-banking' element={<BankOnline />} />
+          <Route path='admin/*' element={<Admin />} />
           <Route path='order-card' element={<OrderCard />} />
+          <Route path='main-news/read/:id' element={<ExtendedMainNews />} />
 
           <Route path='*' element={<Error />} />
         </Routes>
@@ -161,7 +165,7 @@ const App = () => {
         <div className="container">
           <div>
             <Link to="/"><img src={$(window).width() < 1024 ? logoMob : logo} alt="logo" /></Link>
-            <img src={phone} alt="phone" />
+            <a href="tel:1546"><img src={phone} alt="phone" /></a>
           </div>
           <div>
             <div className='copy'>© "GünayBank" ASC</div>

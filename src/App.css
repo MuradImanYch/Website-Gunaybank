@@ -160,7 +160,7 @@ footer .container div:first-child {
 footer div:first-child a img {
     width: 45px;
 }
-footer div:first-child > img {
+footer div:first-child > a:last-child img {
     width: 100px;
     height: 40px;
 }

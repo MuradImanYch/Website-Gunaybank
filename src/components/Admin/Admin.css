@@ -1,0 +1,46 @@
+#admin #admMenu {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    left: -160px;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+#admin #admMenu ul {
+    padding: 20px 20px 0 20px;
+    background: linear-gradient(to left, #005eca, #003e85);
+    width: 150px;
+}
+#admin #admMenu ul li {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+#admin #admMenu ul li a {
+    color: #fff;
+}
+#admin #admMenu .arrowBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px 0 0;
+    color: #ffaa00;
+    font-size: 2.5em;
+    cursor: pointer;
+    height: 0;
+}
+#admin .wrap {
+    border: 2px solid #ffaa00;
+    padding: 50px 35px 50px 35px;
+    border-radius: 20px;
+}
+
+@media (min-width: 1024px) {
+    #admin #admMenu {
+        top: 80px;
+    }
+    #admin .wrap {
+        width: 90%;
+        margin: auto;
+    }
+}
